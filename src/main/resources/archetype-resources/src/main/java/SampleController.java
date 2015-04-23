@@ -12,8 +12,8 @@ public class SampleController {
 	@RequestMapping("/")
 	@ResponseBody
 	String home() {
-		return "Welcomed to $artifactId!" +
-				"/n" +
+		return "<h2>Welcome to $artifactId!<h2>" +
+				"\n" +
 				"Your bootstart generated project has started successfully";
 	}
 
