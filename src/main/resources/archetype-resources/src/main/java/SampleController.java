@@ -12,7 +12,7 @@ public class SampleController {
 	@RequestMapping("/")
 	@ResponseBody
 	String home() {
-		return "Hello World!";
+		return "your bootstart generated '$artifactId' project has started!";
 	}
 
 	public static void main(String[] args) throws Exception {
