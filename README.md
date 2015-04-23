@@ -33,7 +33,7 @@ $ mvn archetype:generate
 Replacing &lt;my.groupid&gt;  and &lt;my-artifactId&gt; as appropriate.
 For example:
 
-```mvn archetype:generate -DarchetypeGroupId=com.shaunabram -DarchetypeArtifactId=bootstart -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=com.yourcompany -DartifactId=yourProjectName```
+```mvn archetype:generate -DarchetypeGroupId=com.shaunabram -DarchetypeArtifactId=bootstart -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=com.yourcompany -DartifactId=yourBootProjectName```
 
 
 
