@@ -1,16 +1,11 @@
 package $package;
 
-/**
- * Hello world!
- *
- */
-public class App {
-    public static void main( String[] args ) {
-		App app = new App();
-        System.out.println(app.getMsg());
-    }
+import org.springframework.boot.SpringApplication;
 
-	public String getMsg() {
-		return "Hello World!";
+public class App {
+
+	public static void main(String[] args) throws Exception {
+		SpringApplication.run(GreetingController.class, args);
 	}
+
 }
