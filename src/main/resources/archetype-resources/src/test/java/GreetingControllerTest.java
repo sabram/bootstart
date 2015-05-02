@@ -9,7 +9,7 @@ public class GreetingControllerTest {
 	@Test
 	public void home() throws Exception {
 		GreetingController controller = new GreetingController();
-		String msg = controller.home();
-		assertTrue(msg.contains("Welcome"));
+		Greeting greeting = controller.greeting("test");
+		assertEquals(greeting.getContent(), "Hello, test!");
 	}
 }

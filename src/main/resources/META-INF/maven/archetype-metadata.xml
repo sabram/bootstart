@@ -11,9 +11,21 @@
         <fileSet filtered="true">
             <directory>src/main/resources</directory>
         </fileSet>
+
+        <!-- only filter html files in webapp (filtering javaScript files was causing errors) -->
+        <fileSet filtered="true">
+            <directory>src/main/webapp</directory>
+            <includes>
+                <include>**/*.html</include>
+            </includes>
+        </fileSet>
         <fileSet>
             <directory>src/main/webapp</directory>
+            <excludes>
+                <exclude>**/*.html</exclude>
+            </excludes>
         </fileSet>
+
         <fileSet filtered="true" packaged="true">
             <directory>src/test/java</directory>
         </fileSet>
