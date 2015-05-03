@@ -12,11 +12,12 @@ printf "\nUpdate the local maven catalog to make sure we are using the latest ve
 mvn install archetype:update-local-catalog
 
 printf "\nGenerating new project called $artifactId\n\n"
-cd ../..
+cd ..
 rm -rf $artifactId
 mvn archetype:generate -DarchetypeGroupId=com.shaunabram -DarchetypeArtifactId=bootstart -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=$groupId -DartifactId=$artifactId -DinteractiveMode=false
 
 printf "\nStarting new project $artifactId\n\n"
 cd $artifactId
+pwd
 mvn spring-boot:run
 
