@@ -8,8 +8,8 @@
 groupId=com.shaunabram
 artifactId=zboot
 
-printf "\nUpdate the local maven catalog to make sure we are using the latest version of bootstart\n\n"
-mvn install archetype:update-local-catalog
+printf "\nUpdating the local maven catalog to make sure we are using the latest version of bootstart\n\n"
+mvn clean install archetype:update-local-catalog
 
 printf "\nGenerating new project called $artifactId\n\n"
 cd ..
